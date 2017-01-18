@@ -1,7 +1,7 @@
 <style type="text/css">
   div#wrapper {
     width: 100%;
-    height:50%;
+    height: 50%;
     padding: 60px;
     background: linear-gradient(blue, purple);
   }
@@ -32,19 +32,39 @@
     right: 30px;
     background-color: black;
   }
-#wrapper2{
-  width:100%;
-  height:50%;
-  padding:60px;
-  background-color:pink;
-}
-
+  
+  #wrapper2 {
+    width: 100%;
+    height: 50%;
+    padding: 60px;
+    background-color: pink;
+  }
+  
   .dango2 {
     height: 100px;
     width: 100px;
     border-radius: 50px;
     background-color: gray;
+    position: relative;
   }
+  .dango2 .eye2{
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+    position: absolute;
+  }
+  
+  .left-eye2 {
+    top: 20px;
+    left: 30px;
+    background-color: black;
+  }
+  
+  .right-eye2 {
+    top: 20px;
+    right: 30px;
+    background-color: black;
+  }  
 </style>
 
 <body>
@@ -54,10 +74,11 @@
       <div class="right-eye eye"></div>
     </div>
   </div>
+
   <div id="wrapper2">
     <div class="dango2">
-      <div class="left eye eye2"></div>
-      <div class="right eye eye2"></div>
+      <div class="left-eye eye2"></div>
+      <div class="right-eye eye2"></div>
     </div>
   </div>
 </body>
