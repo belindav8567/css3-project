@@ -3,73 +3,92 @@
     width: 100%;
     height: 50%;
     padding: 60px;
-   background: linear-gradient(blue,purple); 
+    background: linear-gradient(blue, purple);
   }
-  
   .dango {
     height: 100px;
     width: 100px;
     position: relative;
     border-radius: 50px;
-    background-color:pink;
-   
+    background-color: pink;
+    border:2px solid black;
   }
-  
-  .dango .eye {
-    height: 12px;
-    width: 12px;
-    border-radius: 6px;
-    position: absolute;
+  .dango:hover{
+    transform:scale(2,2);
   }
-  
   .left-eye {
+    position:absolute;
+    height:12px;
+    width:12px;
+    border-radius:6px;
     top: 20px;
     left: 30px;
     background-color: black;
   }
   
   .right-eye {
+    position:absolute;
+    height:12px;
+    width:12px;
+    border-radius:6px;
     top: 20px;
     right: 30px;
     background-color: black;
   }
-  
   #wrapper2 {
     width: 100%;
     height: 50%;
     padding: 60px;
-    background:linear-gradient(purple,blue);
+    background: linear-gradient(purple, blue);
   }
   
   .dango2 {
     height: 100px;
     width: 100px;
     border-radius: 50px;
+    border:2px solid black;
     background-color: gray;
     position: relative;
   }
-  .dango2 .eye2{
-    height: 12px;
-    width: 12px;
-    border-radius: 6px;
-    position: absolute;
+  .dango2:hover{
+    transform:rotate(180deg);
+    
   }
-  
   .left-eye2 {
+    position:absolute;
+    height:12px;
+    width:12px;
+    border-radius:6px;
     top: 20px;
     left: 30px;
     background-color: black;
   }
   
   .right-eye2 {
+    position:absolute;
+    height:12px;
+    width:12px;
+    border-radius:6px;
     top: 20px;
     right: 30px;
     background-color: black;
-  }  
-</style>
+  }
+  
+  h1 {
+    text-align: justify;
+    text-align: center;
+    text-shadow:2px 2px #FF0000;
+    border: 1px solid black;
+    border-style: hidden;
+  }
+  
 
+</style>
+<!DOCTYPE html>
+<html>
 <body>
   <div id="wrapper">
+    <h1>Dango</h1>
     <div class="dango">
       <div class="left-eye eye"></div>
       <div class="right-eye eye"></div>
@@ -77,13 +96,12 @@
   </div>
 
   <div id="wrapper2">
+    <h1>Dango</h1>
     <div class="dango2">
       <div class="left-eye eye2"></div>
       <div class="right-eye eye2"></div>
     </div>
   </div>
+
 </body>
-
-
-
-
+</html>
