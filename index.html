@@ -14,7 +14,6 @@
     border: 2px solid black;
   }
   
-  
   .left-eye {
     position: absolute;
     height: 12px;
@@ -50,7 +49,6 @@
     position: relative;
   }
   
-  
   .left-eye2 {
     position: absolute;
     height: 12px;
@@ -74,27 +72,42 @@
   h1 {
     text-align: justify;
     text-align: center;
-    font-size:300%;
+    font-size: 300%;
     text-shadow: 2px 2px #FF0000;
     border: 1px solid black;
     border-style: hidden;
+    font-family: 'Rock Salt','Sacramento','Shadows Into Light Two', cursive;
   }
   
   .dango,
   .dango2 {
     animation: pulse 5s infinite, nudge 5s linear infinite alternate;
-    transform: scale(2, 2);
-    
-    
   }
- .dango{
-        opacity:0.5;
+  .dango, .dango2 {
+    transform: translate3d(2000px, 0px,0px);
 }
-
-.dango:hover
-{
-        opacity:1;
-}
+  .dango,
+  .dango2 {
+    opacity: 0.5;
+  }
+  
+  .dango:hover,
+  .dango2:hover {
+    opacity: 1;
+    transform: scale(2, 2)
+  }
+  
+  .left-eye, .right-eye, .left-eye2, .right-eye2{
+    transition: background-color 2s;
+  }
+  .left-eye:hover,.right-eye:hover,.left-eye2:hover,.right-eye2:hover{
+    background-color:white;
+  }
+  h1:hover {
+    transform: scale(2);
+    border:2px solid gray;
+  }
+  
   @keyframes pulse {
     0% {
       background-color: #001F3F;
@@ -103,20 +116,21 @@
       background-color: #FF4136;
     }
   }
+  
   @keyframes nudge {
-  
-  0% {
-    transform: rotate(-45deg);
+    0% {
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
   }
-  
-  50% {
-    transform: rotate(45deg);
-  }
-}
 </style>
 <!DOCTYPE html>
 <html>
-
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt|Sacramento|Shadows+Into+Light+Two" rel="stylesheet">
+</head>
 <body>
   <div id="wrapper">
     <h1>Dango,Dango</h1>
