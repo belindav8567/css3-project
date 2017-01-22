@@ -11,7 +11,6 @@
     width: 100px;
     position: relative;
     border-radius: 50px;
-    background-color: pink;
     border: 2px solid black;
   }
   
@@ -48,7 +47,6 @@
     width: 100px;
     border-radius: 50px;
     border: 2px solid black;
-    background-color: gray;
     position: relative;
   }
   
@@ -76,6 +74,7 @@
   h1 {
     text-align: justify;
     text-align: center;
+    font-size:300%;
     text-shadow: 2px 2px #FF0000;
     border: 1px solid black;
     border-style: hidden;
@@ -86,8 +85,16 @@
     animation: pulse 5s infinite, nudge 5s linear infinite alternate;
     transform: scale(2, 2);
     
+    
   }
-  
+ .dango{
+        opacity:0.5;
+}
+
+.dango:hover
+{
+        opacity:1;
+}
   @keyframes pulse {
     0% {
       background-color: #001F3F;
@@ -112,7 +119,7 @@
 
 <body>
   <div id="wrapper">
-    <h1>Dango</h1>
+    <h1>Dango,Dango</h1>
     <div class="dango">
       <div class="left-eye eye"></div>
       <div class="right-eye eye"></div>
@@ -120,7 +127,7 @@
   </div>
 
   <div id="wrapper2">
-    <h1>Dango</h1>
+    <h1>Dango, Dango, Dango, Daikazoku</h1>
     <div class="dango2">
       <div class="left-eye eye2"></div>
       <div class="right-eye eye2"></div>
